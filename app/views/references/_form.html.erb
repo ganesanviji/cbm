@@ -1,0 +1,90 @@
+<%= form_for(@reference, :html => { :multipart => true }) do |f| %>
+              <div id="divMain">
+                
+                <div id="divHeader" style="width: 100%;">
+                  <fieldset>
+
+                  <legend class="legendStyle">New REF Detail</legend>
+
+                  <div class="clearfix" style="height: 20px;"></div>
+                    <% if @reference.errors.any? %>
+                     <div id="error_explanation">
+                      <h2><%= pluralize(@reference.errors.count, "error") %> prohibited this reference from being saved:</h2>
+
+                     <ul>
+                        <% @reference.errors.full_messages.each do |msg| %>
+                                  <li><%= msg %></li>
+                        <% end %>
+                    </ul>
+                    </div>
+                   <% end %>
+
+                    <div>
+
+                      <div class="divalignleft">
+
+                        <div class="clearfix" style="height: 20px;"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Ref No</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_field :ref_no, :class=>"text-box single-line", :id=>"CourseName",  :placeholder=>"REF No" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+
+                        </div>
+
+                        <div class="clearfix" style="height: 20px;"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Note 1</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_area :note1, :class=>"text-box single-line", :id=>"CourseName", :placeholder=>"Note 1" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          
+                        </div>
+
+                        <div class="clearfix" style="height: 20px;"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Note 2</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_area :note2, :class=>"text-box single-line", :id=>"CourseName", :placeholder=>"Note 2" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          
+                        </div>
+
+                        <div class="clearfix" style="height: 20px;"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Note 3</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_area :note3, :class=>"text-box single-line", :id=>"CourseName", :placeholder=>"Note 3" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                         
+                        </div>
+
+                        <div style="height: 20px;" class="clearfix"></div>
+
+                      </div>
+                    </div>
+
+                  </fieldset>
+                  <p style="text-align: center;">
+                    <!--<input value="Clear" id="btnreset" class="operationSavebutton" type="reset">-->
+                    <%= f.submit "Finish", :id=>"btnsubmit", :class=>"operationSavebutton" %>
+                  </p>
+                </div>
+            
+          </div>
+
+          <% end %>
+
+

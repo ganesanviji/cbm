@@ -1,0 +1,137 @@
+﻿
+.pageHeader {
+    color: #5B5B5B;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    padding: 1px;
+}
+.main {
+    float: left;
+    margin-left: 1%;
+    min-height: 300px;
+    width: 344%;
+}
+
+.pageheader > img {
+    height: 30px;
+    vertical-align: top;
+    width: 25px;
+}
+.menu {
+    margin-left: 5px;
+    width: auto;
+    height: 30px;
+    vertical-align: central;
+}
+#menu label{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    vertical-align: bottom;
+}
+.cdetailleft {
+    float: left;
+    width: 45%;
+}
+.cdetailright {
+    float: right;
+    width: 75%;
+}
+.cdetailright1 {
+    float: right;
+    width: 45%;
+}
+.cdetaillabel
+{
+    float: left;
+    width: 25%;
+}
+.legendStyle {
+        background: none repeat scroll 0 0 #EBEDF4;
+        border: 1px solid #CCCED7;
+        font-weight: 900;
+        margin: 0;
+        padding: 0.2em 0.5em;
+        text-align: left;
+    }
+
+.tbrecurstyle {
+    width:60px;
+ }
+ #mainContent div {
+        display: inline-block;
+        margin: 0px 2px 0px 2px;
+    }
+.logo {
+    width:70%;height:100px;float:left;
+}
+.logindisplay {
+    width:20%;height:100px;float:right;
+}
+ 
+ .k-button {
+    background-color: #A3CF53 !important;
+    }
+     .k-upload-button {
+    background-color: #A3CF53 !important;
+    }
+
+ 
+/*------------------Grid Control-----------------------------*/
+.GridButtonNew {        
+    height: 20px;
+    width: 20px;
+}
+
+.GridAddNewButton {    
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.SearchButton {
+    height: 30px;
+    width: 75px;
+    background-image: url('../Images/Search.png');
+    background-repeat: no-repeat;
+}
+
+.GridSearchNewButton {
+      height: 20px;
+    width: 20px;
+    background-color:aliceblue;
+
+}
+.grideditbutton {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('/Pinnacle/Images/edit_alt2_24x24.png') no-repeat scroll !important;
+    margin-left:1%;
+    }
+.gridviewbutton {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('/Pinnacle/Images/View.png') no-repeat scroll !important;
+    margin-left:1%;
+    }
+.griddeletebutton {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('/Pinnacle/Images/Delete.png') no-repeat scroll !important;
+     margin-left:1%;
+    }
+
+.GridSearchImage {
+      height: 20px;
+    width: 20px;
+    background-color:aliceblue;
+
+}
+
+.GridEdit {
+    background-image: url('../Images/Edit.png');
+    background-repeat: no-repeat;
+    height:20px;
+    width:20px;
+}
+

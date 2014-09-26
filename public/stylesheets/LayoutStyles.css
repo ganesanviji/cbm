@@ -1,0 +1,442 @@
+﻿/*.headerBg {
+    background-image: url('/Images/bg.jpg');
+}*/
+
+.left-side-menu {
+    float: left;
+    padding: 1px 4px;
+    width: 16%;
+   
+}
+
+.Reg a:hover {
+    background: Url('../Images/Click.png') no-repeat scroll right top #94C0D2;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Reg a {
+    background: none repeat scroll 0 0 #B4CFEC;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 3px 0;
+    padding: 2px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    width: 240px;
+    font-family: 'Hero';
+}
+
+@font-face
+{
+font-family: Hero !important;
+src: url('../Fonts/GOTHIC.ttf'),
+     url('../Fonts/GOTHIC.eot'); /* IE9 */
+}
+
+.frontC {
+    font-family: 'Hero';
+    font-size: 15px;
+    padding-left: 15px;
+    color: #FFF;
+}
+
+.frontB {
+    font-family: 'Hero';
+    font-size: 25px;
+    padding-left: 15px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.frontD {
+    font-family: 'Hero';
+    font-size: 12px;
+    color: #FFF;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.cour {
+    text-align: center;
+    margin-top: 6px;
+}
+
+.mate {
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.reso {
+    margin-left: 19px;
+    margin-bottom: 17px;
+    margin-top: 15px;
+}
+
+.dash {
+    width: 100%;
+    margin: 10px;
+}
+
+.person {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feed {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.clas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#boxno {
+    text-align: right;
+    float: right;
+    vertical-align: top;
+}
+
+.DashboardEvaluationMastersMenu
+{
+    background-image: url('../Images/Evaluation.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 250px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    margin-left: 71px;
+}
+
+.TrainerMastersMenu {
+    background-image: url('../Images/TrainerMaster.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 230px;
+    height: 79px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.EnrollmentMastersMenu {
+    background-image: url('../Images/EnrollmentMaster.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+}
+
+.InstitueMastersMenu {
+    background-image: url('../Images/InstitueMaster.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 250px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+
+
+
+.EvaluationMastersMenu {
+    background-image: url('../Images/Evaluation.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 250px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+
+.CertificationMastersMenu {
+    background-image: url('../Images/Certificate.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 230px;
+    height: 79px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+
+.SystemManagerMastersMenu {
+    background-image: url('../Images/SystemManager.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+}
+
+/*----------------Manage Course----------------------*/
+.CreateCourseMenu {
+    background-image: url('../Images/CreateEditCourse.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 68px;
+}
+
+.CreateCousreMaterialMenu {
+    background-image: url('../Images/CreateCourseMaterial.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 122px;
+}
+
+.IssueCourseMaterialMenu {
+    background-image: url('../Images/IssueCourseMaterial.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 123px;
+}
+
+/*--------------Calendar-----------------*/
+.CreateCalendearEvent {
+    background-image: url('../Images/CreateNewCalendarEvent.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 90px;
+}
+
+.ConfrimCourseSchedule {
+    background-image: url('../Images/ConfirmCourseSchedule.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 123px;
+}
+
+.EditViewClasslist {
+    background-image: url('../Images/EditViewClassList.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 123px;
+}
+
+.EventAttendance {
+    background-image: url('../Images/EventAttendance.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 32px;
+}
+
+.ClassAttendance {
+    background-image: url('../Images/ClassAttendance.png');
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 75px;
+}
+
+.AppicationCertification {
+    background-image: url('../Images/Certification.png');
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 260px;
+    height: 80px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 75px;
+}
+
+/*--- -------Registration Page----------- -- */
+
+.peronalDetailsbtn {
+    background: url('../Images/Registration/Personeldetailsred.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 178px;
+    cursor: pointer;
+    border: none;
+}
+
+.EduDetailsbtn {
+    background: url('../Images/Registration/edured.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 168px;
+    border: none;
+}
+
+.wrkinfosbtn {
+    background: url('../Images/Registration/workred.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 168px;
+    border: none;
+}
+
+.emailverifibtn {
+    background: url('../Images/Registration/emailred.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 188px;
+    border: none;
+}
+
+
+.peronalDetailsbtn:hover, .peronalDetailsbtn.current {
+    background-image: url('../Images/Registration/Personeldetails.png');
+}
+
+.EduDetailsbtn:hover, .EduDetailsbtn.current {
+    background-image: url('../Images/Registration/edugreen.png');
+}
+
+.wrkinfosbtn:hover, .wrkinfosbtn.current {
+    background-image: url('../Images/Registration/workgreen.png');
+}
+
+.emailverifibtn:hover, .emailverifibtn.current {
+    background-image: url('../Images/Registration/emailgreen.png');
+}
+
+.corporateEnrollment {
+    font-family: 'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 360px;
+    height: 120px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 65px;
+    background-color: #0099CC;
+}
+
+.privateEnrollment {
+    font-family:'Hero';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 360px;
+    height: 120px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 65px;
+    background-color: #993300;
+}

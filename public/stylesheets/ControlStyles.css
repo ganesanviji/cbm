@@ -1,0 +1,435 @@
+﻿
+
+/*------------------Label Style-----------------*/
+
+.divalignright1 {
+    /*float: right;
+    width: 33%;*/
+}
+.divalignleft1 {
+    /*float: left;
+    width: 34%;*/
+}
+.divaligncenter1 {
+    /*float: left;
+    width: 33%;*/
+}
+
+    .k-widget k-autocomplete k-header k-state-default
+    {
+        width:130px !important;
+       
+       
+    }
+    .lblpad {
+        width:18%;
+    padding-right:1%;
+    }
+     .txtbox {
+         height:26px;
+    width:172px;
+           }
+.k-block, .k-button, .k-textbox, .k-drag-clue, .k-touch-scrollbar, .k-window, .k-window-titleless .k-window-content, .k-window-action, .k-inline-block, .k-grid .k-filter-options, .k-grouping-header .k-group-indicator, .k-autocomplete, .k-multiselect, .k-combobox, .k-dropdown, .k-dropdown-wrap, .k-datepicker, .k-timepicker, .k-colorpicker, .k-datetimepicker, .k-numerictextbox, .k-picker-wrap, .k-numeric-wrap, .k-colorpicker.k-list-container, .k-calendar-container, .k-calendar td, .k-calendar .k-link, .k-treeview .k-in, .k-editor-button .k-state-hover, .k-editor-button .k-state-active, .k-tooltip, .k-tile, .k-slider-track, .k-slider-selection {
+  border-radius:0px ! important;
+   
+}
+ 
+.lblstyle {
+    font-family: 'Century Gothic';
+    font-size: 1.0em;
+    font-weight: bolder;
+    color: #003E57;
+}
+.fontstyle {
+    font-family: 'Century Gothic';
+    font-size: 0.85em;
+    }
+
+.newformLabelsleft {
+    float: left;
+    width: 18%;
+    float: left;
+    margin-left: 0.3%;
+    vertical-align: central !important;
+    margin-top: 1.2% !important;
+    font-family: 'Century Gothic';
+     font-size: 0.85em;
+}
+
+.newformLabelsright {
+    float: right;
+    width: 80%;
+    font-family: 'Century Gothic';
+}
+
+.singleleftlabel {
+    float: left;
+    width: 15%;
+    margin-left: 2%;
+    margin-top: .5%;
+}
+
+.singlerightlabel {
+    float: left;
+    width: 70%;
+}
+
+.divleft {
+    float: left;
+    width: 27%;
+    margin-top: 1.2%;
+    font-family:'Century Gothic';
+}
+
+.divright {
+    float: right;
+    width: 65%;
+     font-family:'Century Gothic';
+}
+
+.lbl {
+    background-color: #368CB2;
+    display: inline-block;
+    width: 14.8%;
+    height: 100%;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+}
+
+/*------------------TextBox  Style----------------*/
+
+.fromTextbox {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #B6CEE6 !important;
+    width: 36% !important;
+    width: auto;
+}
+
+
+
+| /*.box {
+    background-image: Url('../Images/boxcopy.png');
+    height: 109px;
+    width: 127px;
+    display: inline-block;
+}
+
+.boxtext {
+    font-family: 'Century Gothic' !important;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #FFF;
+}
+
+.boxno {
+    font-family: 'Century Gothic' !important;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    color: #FFF;
+}*/
+
+
+/* -----------------------------------------Save And Cancel button Styles----------------------*/
+/*.operationSavebutton {
+    background-color: #A3CF53;
+    height: 32px;
+    width: 95px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Century Gothic' !important;
+    
+}
+
+    .operationSavebutton:hover {
+        text-align: center;
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Century Gothic' !important;
+        border-style: solid !important;
+        border-width: 3px !important;
+        border-color: #B6CEE6 !important;
+        height: 32px;
+       
+    }
+
+.operationCancelbutton {
+    background-color: #A3CF53;
+    height: 32px;
+    width: 95px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Century Gothic' !important;
+    
+}
+
+    .operationCancelbutton:hover {
+        text-align: center;
+        color: black;
+        vertical-align: middle;
+        font-family: 'Century Gothic' !important;
+        border-style: solid !important;
+        border-width: 3px !important;
+        border-color: #B6CEE6 !important;
+        height: 32px;
+       
+    }*/
+
+/*-----------------Legend Style---------------*/
+
+.legendStyle {
+    background: none repeat scroll 0 0 #EBEDF4;
+    border: 1px solid #CCCED7;
+    font-weight: 900;
+    margin: 0;
+    padding: 0.2em 0.5em;
+    text-align: left;
+    font-family: 'Century Gothic';
+}
+
+
+/*------------------DropDown------------------------*/
+
+.ddstyle {
+    font-size: small;
+    font-family: 'Century Gothic';
+}
+
+.k-grid .k-grid-header .k-header .k-link {
+    height: auto;
+    font-size: smaller;
+    text-align: center
+}
+.k-link:hover
+{
+    background: none !important;
+}
+
+.k-grid .k-grid-header .k-header {
+    white-space: normal;
+}
+
+.k-grid td {
+    font-size: 12px;
+}
+
+
+.tablespacing {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+/*.kendodropdown {
+    min-width:40% !important;
+    }*/
+
+.k-button {
+    background-color: #CC3366;
+    font-family: 'Century Gothic';
+    font-size:1em;
+}
+
+
+k-widget k-datepicker k-header KendoDatePicker {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: .5px !important;
+    border-color: #B6CEE6 !important;
+}
+
+/*.k-autocomplete.k-state-default, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-dropdown-wrap.k-state-default {
+    width:90% !important;
+}*/
+
+/*.k-dropdown-wrap .k-input, .k-picker-wrap .k-input, .k-numeric-wrap .k-input {
+    height: 28px !important ;
+    min-width:200px !important;   
+       
+}
+ /---------------Main----kendodropdown----------------------/
+       .span.k-datepicker, span.k-timepicker, span.k-datetimepicker, span.k-colorpicker, span.k-numerictextbox, span.k-combobox, span.k-dropdown
+{
+width:80% !important;
+}*/
+
+/*--------------Button----------------*/
+
+.pinnaclebuttonStyle {
+    width: 150px;
+    height: 35px;
+    background: #A3CF53;
+    font-family: 'Century Gothic';
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+    .pinnaclebuttonStyle:hover {
+        background: #24BCAD;
+        text-align: center;
+    }
+
+.pinnacleAnchorstyle {
+    width: 150px;
+    height: 35px;
+    background: #566D7E;
+    font-family: 'Century Gothic';
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+    height: 15px;
+}
+
+
+/*Horizantal Form Controls - 4 columns per row - Begin*/
+.divalignleft {
+    float: left;
+    width: 45%;
+    font-family: 'Century Gothic' !important;
+   
+}
+
+.divalignright {
+    float: right;
+    width: 50%;
+    font-family: 'Century Gothic' !important;
+   
+}
+
+.Htextbox {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+.Hpasswordbox {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+.Htextarea {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+.Hkendodropdown {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+.HKendoDatePicker {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: .5px !important;
+    border-color: #BFE8E3 !important;
+    width: auto;
+}
+
+.HCombobox {
+     font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+/*Horizantal Form Controls - End*/
+
+/*.span.k-datepicker, span.k-timepicker, span.k-datetimepicker, span.k-colorpicker, span.k-numerictextbox, span.k-combobox, span.k-dropdown{
+    width:80% !important;
+}*/
+
+/*Vertical Form Controls - 2 columns per row - Begin*/
+
+.Vtextbox {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 36.5% !important;
+}
+
+.Vpasswordbox {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+.Vtextarea {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 80% !important;
+}
+
+.Vkendodropdown {
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: 2.5px !important;
+    border-color: #BFE8E3 !important;
+    width: 31.5% !important;
+}
+
+.VKendoDatePicker {
+    width: auto;
+    font-family: 'Century Gothic' !important;
+    border-style: solid !important;
+    border-width: .5px !important;
+    border-color: #BFE8E3 !important;
+}
+
+/*Vertical Form Controls - End*/
+
+/****************Multi Div in one lne*********************/
+ .multidivcontainer {
+        width: 100%;
+        /* Firefox */
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+        -moz-box-lines: multiple;
+        /* Safari and Chrome */
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        -webkit-box-lines: multiple;
+        /* W3C */
+        display: box;
+        box-orient: horizontal;
+        box-lines: multiple;
+    }
+
+    .multidiv {
+        width: 100px;
+        /* Firefox */
+        -moz-box-flex: 1.0;
+        /* Safari and Chrome */
+        -webkit-box-flex: 1.0;
+        /* W3C */
+        box-flex: 5.0;
+    }

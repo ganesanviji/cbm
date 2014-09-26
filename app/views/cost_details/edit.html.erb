@@ -1,0 +1,4 @@
+<h1>edit Cost details</h1>
+<%= render "cost_details/form" %>
+
+<%= link_to 'Back', cbm_cost_cost_details_path(:cbm_id => @cost_details.cost.cbm_id, :cost_id => @cost_details.cost_id) %> ||<%= link_to "Back to Main Menu", home_index_path %>

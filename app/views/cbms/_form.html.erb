@@ -1,0 +1,73 @@
+<%= form_for([@cbm]) do |f| %>
+  <div class="field">
+    <%= f.label :pur_no %><br />
+    <%= f.text_field :pur_no %>
+  </div>
+  <div class="field">
+    <%= f.label :pur_date %><br />
+    <%= f.text_field :pur_date, :class => "datepicker" %>
+  </div>
+  <div class="field">
+    <%= f.label :arr_date %><br />
+    <%= f.text_field :arr_date, :class => "datepicker" %>
+  </div>
+  <div class="field">
+    <%= f.label :exp1 %><br />
+    <%= f.text_field :exp1 %>
+  </div>
+  <div class="field">
+    <%= f.label :conversion %><br />
+    <%= f.text_field :conversion %>
+  </div>
+  <div class="field">
+    <%= f.label :exp2 %><br />
+    <%= f.text_field :exp2 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp3 %><br />
+    <%= f.text_field :exp3 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp4 %><br />
+    <%= f.text_field :exp4 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp5 %><br />
+    <%= f.text_field :exp5 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp6 %><br />
+    <%= f.text_field :exp6 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp7 %><br />
+    <%= f.text_field :exp7 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp8 %><br />
+    <%= f.text_field :exp8 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp9 %><br />
+    <%= f.text_field :exp9 %>
+  </div>
+  <div class="field">
+    <%= f.label :exp10 %><br />
+    <%= f.text_field :exp10 %>
+  </div>
+   <div class="field">
+    <%= f.label :no_of_ct %><br />
+    <%= f.text_field :no_of_ct %>
+  </div>
+   <div class="field">
+    <%= f.label :per_cbm %><br />
+    <%= f.text_field :per_cbm %>
+  </div>
+  <div class="field">
+    <%= f.label :cbm %><br />
+    <%= f.text_field :cbm %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Finish", :id=>"btnsubmit", :class=>"operationSavebutton" %>
+  </div>
+<% end %>

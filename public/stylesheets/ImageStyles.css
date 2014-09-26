@@ -1,0 +1,22 @@
+﻿.searchimg {
+      height:34px !important;
+     width:54px !important;     
+     background: Url('/Images/Search.png') no-repeat scroll !important;
+    /*margin-left:15%;*/
+}
+.deleteimg {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('../Images/Delete.png') no-repeat scroll !important;
+    /*margin-left:15%;*/
+}
+.addnewimg {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('../Images/AddNew.png') no-repeat scroll !important;
+}
+.editimg {
+     height:34px !important;
+     width:54px !important;
+     /*background: Url('../Images/AddNew.png') no-repeat scroll !important;*/
+}

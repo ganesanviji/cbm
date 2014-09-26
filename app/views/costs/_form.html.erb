@@ -1,0 +1,29 @@
+<%= form_for([@cbm, @cost]) do |f| %>
+  <div class="field">
+    <%= f.label :pur_no %><br />
+    <%= f.select :pur_no, options_for_select(Cbm.all.collect{ |u| [u.pur_no, u.id] }) %>
+  </div>
+  <div class="field">
+    <%= f.label :per1 %><br />
+    <%= f.text_field :per1 %>
+  </div>
+  <div class="field">
+    <%= f.label :conversion %><br />
+    <%= f.text_field :conversion %>
+  </div>
+  <div class="field">
+    <%= f.label :pur2 %><br />
+    <%= f.text_field :pur2 %>
+  </div>
+  <div class="field">
+    <%= f.label :com %><br />
+    <%= f.text_field :com %>
+  </div>
+  <div class="field">
+    <%= f.label :arrivaldate %><br />
+    <%= f.text_field :arrivaldate, :class => "datepicker" %>
+  </div>
+   <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

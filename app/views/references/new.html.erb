@@ -1,0 +1,70 @@
+
+<html class="k-ff k-ff20"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+      <title>Home Page</title>
+      <link href="../stylesheets/Site.css" rel="stylesheet" type="text/css">
+      <link href="../stylesheets/FormStyles.css" rel="stylesheet">
+      <link href="../stylesheets/kendo.css" rel="stylesheet">
+      <link href="../stylesheets/kendo_002.css" rel="stylesheet">
+      <link href="../stylesheets/ControlStyles.css" rel="stylesheet">
+      <link href="../stylesheets/GridStyles.css" rel="stylesheet">
+      <link href="../stylesheets/LayoutStyles.css" rel="stylesheet">
+      <link href="../stylesheets/ImageStyles.css" rel=" stylesheet">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/custom.css">
+      <script src="../javascripts/jquery-1.js" type="text/javascript"></script>
+      <script src="n../javascripts/jquery.js" type="text/javascript"></script>    
+      <script src="../javascripts/Moment.js" type="text/javascript"></script>
+      <script src="../javascripts/kendo.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+           ShowTime();
+        });
+        function ShowTime() {
+           var now = moment().format("ddd, MMM Do, YYYY, h:mm:ss A");
+           var splitedDates = now.split(',');
+           document.getElementById("lblday").innerHTML = splitedDates[0];
+           document.getElementById("lblmonth").innerHTML = splitedDates[1];
+           document.getElementById("lblyear").innerHTML = splitedDates[2];
+           document.getElementById("lblTym").innerHTML = splitedDates[3];
+           window.setTimeout("ShowTime()", 1000);
+           //var dt = new Date();
+           //document.getElementById("lblTym").innerHTML = dt.toLocaleTimeString();
+           //window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec  
+        }
+      </script>  
+      <script>
+        jQuery(function(){jQuery("#panelbar").kendoPanelBar({"expandMode":"multiple"});});
+      </script>
+  </head>
+
+ 
+
+        <!-- Body Content Starts -->
+        <div id="main" class="main">
+          <div style="height:1500px;">
+            <link href="../stylesheets/ControlStyles.css" rel="stylesheet" type="text/css">
+            <link href="../stylesheets/ControlStyles.css" rel="stylesheet">
+            <link href="../stylesheets/GridStyles.css" rel="stylesheet">
+            <link href="../stylesheets/LayoutStyles.css" rel="stylesheet">
+            <link href="../stylesheets/ImageStyles.css" rel=" stylesheet">
+  
+            <p style="background-color:#283385;color:white;padding:0px;"> 
+              <img src="../images/pin_24x24.png" style="vertical-align:middle;padding:0.5%;" height="24" width="24">
+              <span class="topheaders">Add New REF</span>
+            </p>
+
+            <%= render "form" %>
+
+
+
+        </div>
+      </div>
+        <!-- Body Content Ends -->
+      </div>
+
+    </div>
+    
+    <div class="clearfix"></div>
+    <div class="clearfix"></div>
+  
+</body></html>

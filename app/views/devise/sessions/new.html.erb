@@ -1,0 +1,102 @@
+
+﻿<html>
+<!--- Header Starts -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home</title>
+    <link href="../stylesheets/Site.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/FormStyles.css" rel="stylesheet">
+    <!--<script src="../javascripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <link href="../stylesheets/kendo.common.min.css" rel="stylesheet">
+    <link href="../stylesheets/kendo.default.min.css" rel="stylesheet">
+    <link href="../stylesheets/kendo.dataviz.min.css" rel="stylesheet">
+    <link href="../stylesheets/kendo.rtl.min.css" rel="stylesheet">-->
+    <!--<script src="../javascripts/jquery.min.js" type="text/javascript"></script>-->
+    <!--<script src="../javascripts/kendo.web.min.js" type="text/javascript"></script>
+    <script src="../javascripts/kendo.dataviz.min.js" type="text/javascript"></script>
+    <script src="../javascripts/kendo.aspnetmvc.min.js" type="text/javascript"></script>-->
+    <link href="../stylesheets/jquery-ui.css" rel="stylesheet">
+    <script src="../javascripts/jquery-ui.js" type="text/javascript"></script>
+    <link href="../stylesheets/ControlStyles.css" rel="stylesheet">
+    <!--<link href="../stylesheets/CustomStyles/GridStyles.css" rel="stylesheet">-->
+    <link href="../stylesheets/LayoutStyles.css" rel="stylesheet">
+    <link href="../stylesheets/ImageStyles.css" rel="stylesheet">
+    <!--<script src="../javascripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="../javascripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>-->
+</head>
+<!-- Head Ends -->
+
+<!-- Body Starts -->
+<body class="layoutbody" cz-shortcut-listen="true">
+    <div id="title"></div>
+    
+    <div style="width: auto; height: 83px;">
+        <div id="logo" class="logo">
+            <div style="height: 110px; margin-left: auto;margin-right: auto;width: 85%;">
+                <p style="float: left; width: 11%; margin-left: 0%">
+                    <img src="../images/logo.png" width="116" height="84">
+                </p>
+                <p style="float: left; margin-top: 5%; width: 50%; margin-left: 10%; color: #3050A3; height: 25%;">
+                    <span id="font">CBM Forms </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id = "main1">
+    
+
+    <h2 class="pageheader">CBM Login</h2>    
+    
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), :novalidate =>"novalidate") do |f| %>
+    
+        <fieldset id="field">
+            <div style="min-height: 150px;">
+                <h1></h1>
+                <table style="border: none ! important">
+                    <tbody>
+                        <tr>
+                            <td style="border: none ! important">
+                                <span>
+                                    <label for="UserName">Email</label></span>
+                            </td>
+                            <td style="border: none ! important">
+                            	<%= f.email_field :email, autofocus: true %>
+                                <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none ! important">
+                                <span>Password </span>
+                            </td>
+                            <td style="border: none ! important">
+                            	<%= f.password_field :password %>
+                                
+                                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none ! important"></td>
+                            <td style="border: none ! important">
+                            	<%= f.submit "Sign in", :id=>"btnstafflogin", :title=>"Login", :class=>"operationSavebutton"  %>
+                                
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    
+    <% end %>
+   <%= render "devise/shared/links" %> 
+</div>
+    <!-- Body Ends -->
+
+    <!-- Footer Starts -->
+    <div id="footer">
+    </div>
+    <!-- Footer Ends -->
+
+</body>
+</html>

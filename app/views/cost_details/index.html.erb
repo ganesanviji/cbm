@@ -1,0 +1,52 @@
+<h1>All Cost Details</h1>
+<div style="color:green"><%= flash[:notice] %></div>
+<table border="1px solid black;">
+  <thead>
+    <tr>
+      <th>REF_NO-MODEL_NO-DESC</th>
+      <th>Last purchase Price</th>
+      <th>Purchase Price</th>
+      <th>Quantity</th>
+      <th>Purchase Com</th>
+      <th>inr</th>
+      <th>cbm</th>
+      <th>cbm ex</th>
+      <th>purchase cbm</th>
+      <th>per1</th>
+      <th>per2</th>
+      <th>sell price</th>
+      <th>last sell cbm</th>
+      <th>last sell price</th>
+      <th>last purchase price</th>
+       </tr>
+  </thead>
+
+  <tbody>
+    <% @cost_details.each do |cost_detail| %>
+      <tr>
+        <td><%= cost_detail.refno_model_desc %></td>
+        <td><%= cost_detail.last_pur_price %></td>
+        <td><%= cost_detail.pur_price %></td>
+        <td><%= cost_detail.qty %></td>
+        <td><%= cost_detail.p_com %></td>
+        <td><%= cost_detail.inr %></td>
+        <td><%= cost_detail.cbm %></td>
+        <td><%= cost_detail.cbm_ex %></td>
+        <td><%= cost_detail.p_cbm %></td>
+        <td><%= cost_detail.per1 %></td>
+        <td><%= cost_detail.pur2 %></td>
+        <td><%= cost_detail.sell_price %></td>
+        <td><%= cost_detail.last_sell_cbm %></td>
+        <td><%= cost_detail.last_sell_price %></td>
+        <td><%= cost_detail.last_pur_no %></td>
+        <td><%= link_to "Show Cost Details",cbm_cost_cost_detail_path(:id => cost_detail.id, :cost_id => cost_detail.cost.id, :cbm_id => @cbm.id) %></td>
+        <td><%= link_to "Edit Cost Details", edit_cbm_cost_cost_detail_path(:id => cost_detail.id, :cost_id => cost_detail.cost.id, :cbm_id => @cbm.id) %></td>
+        <td><%= link_to 'Destroy Cost Details', cbm_cost_cost_detail_path(:id => cost_detail.id,:cost_id => cost_detail.cost.id, :cbm_id => @cbm.id),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<%= link_to "Back to Main Menu", home_index_path %>

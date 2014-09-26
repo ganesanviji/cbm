@@ -1,0 +1,58 @@
+<h1>Listing models</h1>
+<div>
+  <span style="float:left;">
+    Search By Reference No:
+    <%= form_tag ref_search_path do %>
+      <%= text_field_tag :ref_search %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </span>
+
+  <span style="float:left;">
+    Search By Model No:
+    <%= form_tag mod_search_path do %>
+      <%= text_field_tag :mod_search %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </span>
+
+  <span>
+    Search By Model Description:
+    <%= form_tag mod_des_search_path do %>
+      <%= text_field_tag :mod_des_search %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </span>
+
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<table border="1px solid black">
+  <thead>
+    <tr>
+      <th>Ref No</th>
+      <th>Model No</th>
+      <th>Purchase price</th>
+      <th>CBM</th>
+      <th>Weight</th>
+      <th>Selling Price</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mod_des_search.each do |m| %>
+      <tr>
+        <td><%= m.reference.ref_no %></td>
+        <td><%= m.model_no %></td>
+        <td><%= m.pur_price %></td>
+        <td><%= m.cbm %></td>
+        <td><%= m.weight %></td>
+        <td><%= m.selling_price %></td>
+        <td><%= m.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to "Back to Main Menu", home_index_path %>

@@ -1,0 +1,35 @@
+<h1>List of Costs</h1>
+<table border="1px solid black;">
+  <thead>
+    <tr>
+      <th>Purchase Number</th>
+      <th>CBM Exp</th>
+      <th>Per1</th>
+      <th>Conversion</th>
+      <th>Purchase Date</th>
+      <th>Pur2</th>
+      <th>Arrival Date</th>
+       </tr>
+  </thead>
+
+  <tbody>
+    <% @costs.each do |cost| %>
+      <tr>
+        <td><%= cost.pur_no %></td>
+        <td><%= cost.cbm_exp %></td>
+        <td><%= cost.per1 %></td>
+        <td><%= cost.conversion %></td>
+        <td><%= cost.pur_date %></td>
+        <td><%= cost.pur2 %></td>
+        <td><%= cost.arrivaldate %></td>
+        <%#= link_to "Edit Cost", edit_cbm_cost_path(:id => cost.id, :cbm_id => @cbm.id) %>
+        <td><%= link_to 'Destroy Cost', cost ,  method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to "Add Cost Details", new_cbm_cost_cost_detail_path(:cost_id => cost.id,:cbm_id => @cbm.id) %></td>
+        <td><%#= link_to "All Cost Details", cbm_cost_cost_details_path(:cost_id => cost.id,:cbm_id => @cbm.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<%= link_to "Back to Main Menu", home_index_path %>

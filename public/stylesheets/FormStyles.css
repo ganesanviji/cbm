@@ -1,0 +1,1057 @@
+/*--------------not used--------------*/
+@font-face
+{
+font-family: mySiteFont;
+src: url('Fonts/GOTHIC.ttf'),
+     url('Fonts/GOTHIC.eot'); /* IE9 */
+}
+
+.formLabels {
+float:left;
+width:150px;
+height:40px;
+}
+.formlabel {
+font-size:0.95em !important;
+font-family:'mySiteFont' !important;
+width:150px;
+}
+.formControls {
+    float:right;
+    width:200px;
+    height:40px;
+}
+
+.EnrollmentHeaders {
+    font-family:'mySiteFont' !important;
+    font-weight:bolder;
+    font-size:x-large;
+}
+
+.GridHeaders {
+font-family:'mySiteFont' !important;
+font-size:larger;
+color:white;
+background-color:black;
+}
+
+.thStyles {
+ min-width:100px;
+}
+
+.mast:hover {
+    background: -moz-linear-gradient(center top, #EEEEEE, #FFFFFF) repeat scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 3px #CCCCCC;
+    color: #333333;
+}
+
+
+.CoursesMastersMenu {
+    background-image: url('../Images/Courses.png');
+    font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 230px;
+     height: 79px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+}
+
+.CalendarMastersMenu {
+ background-image: url('../Images/Calendar.png');
+ font-family: 'mySiteFont' !important;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+           
+}
+
+.Evaluation {
+ background-image: url('../Images/Evaluation.png');
+ font-family: 'mySiteFont' !important;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+    background-repeat:no-repeat;
+         border-color:black;
+         margin-left:75px;
+}
+
+.AttendanceMenu {
+background-image: url('../Images/Attendance.png');
+ font-family: 'mySiteFont' !important;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+    background-repeat:no-repeat;
+         border-color:black;
+         margin-left:60px;
+}
+   
+.RegistrationMenu {
+background-image: url('../Images/registration.png');
+ font-family: 'mySiteFont' !important;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:65px;
+}
+
+
+.largetextbox {
+min-width:300px !important;
+font-family:'mySiteFont' !important;
+border-style:solid  !important;
+border-width:2.5px !important;
+border-color:#B6CEE6 !important;
+}
+
+.infomenu {
+	background-color: #ffa200;
+	height: 35px;
+	font-family: 'mySiteFont' !important;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.footerbuttons {
+ text-align:left;
+ border:none;
+ vertical-align:bottom;
+}
+
+/*-----------------------------------------------*/
+
+
+/*.DashboardEvaluationMastersMenu {
+ background-image: url('../Images/Evaluation.png');
+    font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 250px;
+     height: 80px;
+     text-indent: -9999px;
+    background-repeat:no-repeat;
+    margin-left:71px;
+}*/
+
+
+
+
+/*.TrainerMastersMenu {
+    background-image: url('../Images/TrainerMaster.png');
+    font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 230px;
+     height: 79px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         margin-left:20px;
+}
+
+.EnrollmentMastersMenu {
+ background-image: url('../Images/EnrollmentMaster.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;          
+         border-color:black;
+           
+}
+
+.InstitueMastersMenu {
+ background-image: url('../Images/InstitueMaster.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 250px;
+     height: 80px;
+     text-indent: -9999px;
+    background-repeat:no-repeat;
+   
+}
+
+
+.EvaluationMastersMenu {
+ background-image: url('../Images/Evaluation.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 250px;
+     height: 80px;
+     text-indent: -9999px;
+    background-repeat:no-repeat;
+    
+}
+
+.CertificationMastersMenu {
+    background-image: url('../Images/Certificate.png');
+    font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 230px;
+     height: 79px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+}
+
+.SystemManagerMastersMenu {
+ background-image: url('../Images/SystemManager.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+            border-color:black;
+           
+}*/
+
+
+/*.CreateCourseMenu {
+ background-image: url('../Images/CreateEditCourse.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:68px;
+           
+}
+.CreateCousreMaterialMenu {
+ background-image: url('../Images/CreateCourseMaterial.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+           margin-left:122px;
+}
+.IssueCourseMaterialMenu {
+ background-image: url('../Images/IssueCourseMaterial.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:123px;
+           
+}*/
+
+/*.CreateCalendearEvent {
+background-image: url('../Images/CreateNewCalendarEvent.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:90px;
+}
+.ConfrimCourseSchedule {
+background-image: url('../Images/ConfirmCourseSchedule.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:123px;
+}
+.EditViewClasslist {
+background-image: url('../Images/EditViewClassList.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:123px;
+}
+.EventAttendance {
+background-image: url('../Images/EventAttendance.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:32px;
+}
+
+.ClassAttendance {
+background-image: url('../Images/ClassAttendance.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:75px;
+}*/
+
+
+
+/*.AppicationCertification {
+background-image: url('../Images/Certification.png');
+ font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+     width: 260px;
+     height: 80px;
+     text-indent: -9999px;
+         background-repeat:no-repeat;
+         border-color:black;
+         margin-left:75px;
+}*/
+
+
+/*.GridButtonNew {        
+    height: 20px;
+    width: 20px;
+}
+
+.GridAddNewButton {    
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.SearchButton {
+    height: 30px;
+    width: 75px;
+    background-image: url('../Images/Search.png');
+    background-repeat: no-repeat;
+}
+
+.GridSearchNewButton {
+      height: 20px;
+    width: 20px;
+    background-color:aliceblue;
+
+}
+
+.GridSearchImage {
+      height: 20px;
+    width: 20px;
+    background-color:aliceblue;
+
+}
+
+.GridEdit {
+    background-image: url('../Images/Edit.png');
+    background-repeat: no-repeat;
+    height:20px;
+    width:20px;
+}*/
+
+/*-- Styles for Registration Page -- */
+
+/*.peronalDetailsbtn {
+     background: url('../Images/Registration/Personeldetailsred.png');
+     background-repeat: no-repeat;
+     height: 34px;
+     width: 178px;
+     cursor:pointer;
+     border:none;
+}
+
+.EduDetailsbtn {
+    background: url('../Images/Registration/edured.png');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 168px;
+    border:none;
+}
+
+.wrkinfosbtn {
+     background: url('../Images/Registration/workred.png');
+     background-repeat: no-repeat;
+     height: 34px;
+     width: 168px;
+     border:none;
+}
+
+.emailverifibtn {
+     background: url('../Images/Registration/emailred.png');
+     background-repeat: no-repeat;
+     height: 34px;
+     width: 188px;
+     border:none;
+}
+
+
+.peronalDetailsbtn:hover, .peronalDetailsbtn.current {
+    background-image: url('../Images/Registration/Personeldetails.png');
+   
+}
+
+.EduDetailsbtn:hover, .EduDetailsbtn.current {
+    background-image: url('../Images/Registration/edugreen.png');
+    
+}
+
+.wrkinfosbtn:hover, .wrkinfosbtn.current {
+     background-image: url('../Images/Registration/workgreen.png');
+   
+}
+
+.emailverifibtn:hover, .emailverifibtn.current {
+     background-image: url('../Images/Registration/emailgreen.png');
+    
+}
+
+.corporateEnrollment {
+    font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 360px;
+    height: 120px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 65px;
+    background-color: #0099CC;
+}
+
+
+.privateEnrollment {
+    font-family: Sylfaen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    display: block;
+    width: 360px;
+    height: 120px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    border-color: black;
+    margin-left: 65px;
+    background-color: #993300;
+}*/
+
+#content_left {
+    float: left;
+    padding: 10px;
+    width: 45%;
+    background-image: url('../Images/Picture6.png');
+        background-repeat: no-repeat;
+    height: 138px;
+    background-repeat: no-repeat;
+}
+#content_right
+{
+	float:left;
+    padding: 10px;
+    width: 45%;
+	background-image:url('../Images/Picture7.png');
+        background-repeat: no-repeat;
+	height:136px;
+}
+#individual
+{
+	float:left;
+    padding: 10px;
+    margin-left:20px;
+    width: 32%;
+	background-image:url('../Images/Picture1.png');
+        background-repeat: no-repeat;
+	height:88px;
+	margin-top: 30px;
+}
+#group
+{
+	float:left;
+    padding: 10px;
+    width: 32%;
+	background-image:url('../Images/Picture2.png');
+        background-repeat: no-repeat;
+	height:88px;
+	margin-top: 30px;
+}
+
+#multiselect div 
+{
+    float:left;
+    margin-right:10px;
+}
+
+.headerTitle {
+    font-family:Sylfaen;
+    font-size:large;
+    font-weight:bold;
+}
+
+
+ /*.newformLabelsleft {
+float:left;
+width:22%;
+float:left;
+margin-left:0.3%;
+    }
+.newformLabelsright {
+    float:right;
+    width:76%;
+
+}*/
+
+ .legendStyle {
+        background: none repeat scroll 0 0 #EBEDF4;
+        border: 1px solid #CCCED7;
+        font-weight: 900;
+        margin: 0;
+        padding: 0.2em 0.5em;
+        text-align: left;
+         font-family:'Century Gothic';
+    }
+   
+
+ /*dropdown templetes*/
+    /*.ddstyle {
+    font-size:small;
+    font-family:Verdana;    
+    }*/
+
+    /*.k-grid  .k-grid-header  .k-header  .k-link {
+    height: auto;
+    font-size:smaller;
+}
+  
+.k-grid  .k-grid-header  .k-header {
+    white-space: normal;
+}
+.k-grid td {
+font-size:12px;
+}*/
+
+/*.tablespacing
+{
+border-collapse:separate;
+border-spacing:5px;
+}*/
+
+
+.pageHeader {
+font-family:'Century Gothic';
+font-weight:bold;
+padding:26px 148px 0px;
+color:#5B5B5B;
+}
+
+.lblstyle {
+font-family:'Century Gothic';
+font-size:1.0em;
+font-weight:bolder;
+color:#003E57 ;
+}
+
+
+/* New Form Desings */
+
+  /*.lbl {
+        background-color: #368CB2;
+        display: inline-block;
+        width: 14.8%;
+        height: 100%;
+        margin: 0px 0px 0px 5px;
+        padding: 0px;
+
+    }*/
+
+    .cntrl {
+        background-color:#BCC6CC;
+        display: inline-block;
+        width: 84%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px 0px 0px 3px;
+       
+    }
+
+    .cmp {
+        background-color: #8ED9F7;
+        display: inline-block;
+        width: 84%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px 0px 0px 3px;
+        
+    }
+
+
+    .oter {
+        background-color: #F0F0F0;
+        margin: 2px 0px 2px 0px;        
+        width:100%;
+        height:35px;
+    }
+
+    .wrp {
+        background-color: white;
+    }
+
+    #basicinfo {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .btngrp {
+        margin:0px;
+        padding:0px;
+        text-align: right;
+    }
+
+    /* overriding the kendo Grid styles - begin*/
+        
+  
+
+
+/* overriding the kendo Grid styles - end */
+
+
+    /* overriding the kendo button styles - begin*/
+
+
+    /* overriding the kendo button styles - end */
+
+
+.roundcorner
+{
+border:2px solid;
+border-top-right-radius:2em;
+}
+
+.rounddiv {
+border-top-right-radius:2em;
+}
+
+extarea:focus, input:focus{
+    outline: 0;
+}
+/* Form Button style - Begin*/
+
+/*.pinnaclebuttonStyle {
+  width:150px;
+  height:35px;
+  background:#A3CF53;
+  font-family:'Century Gothic';
+  font-size:small;
+  font-weight:bold;
+  color:white;
+}
+
+ .pinnaclebuttonStyle:hover {           
+        background:#24BCAD;
+        text-align:center;
+    }
+
+.pinnacleAnchorstyle {
+  width:150px;
+  height:35px;
+  background:#566D7E;
+  font-family:'Century Gothic';
+  font-size:small;
+  font-weight:bold;
+  color:white;
+}*/
+/* Form Button style - End*/
+
+
+/*form design New- begin*/
+/*.tableformspacing
+{
+border-collapse:separate;
+border-spacing:2px;
+}*/
+
+.tdformlabel{
+   border:none;
+   
+    font-family:'Century Gothic';
+font-size:0.85em;
+}
+
+/*.tdformContent {
+  border:none;
+  width:60%;
+  background:#8ED9F7;
+}*/
+
+.tdformMandatorycontent {
+border:none;
+width:60%;
+
+ font-family:'Century Gothic';
+}
+
+
+
+/*.fromTextbox {
+font-family:'Century Gothic' !important;
+border-style:solid  !important;
+border-width:2.5px !important;
+border-color:#B6CEE6 !important;
+width:36.5% !important;
+}
+
+/*.kendodropdown {
+font-family:'Century Gothic' !important;
+border-style:solid  !important;
+border-width:2.5px !important;
+border-color:#B6CEE6 !important;
+}*/
+
+
+
+.toplabel {
+ background:#24BCAD;
+ color:white;  
+ font-size:19px;
+ font-weight:bold; 
+}
+
+.footerbuttons {
+ text-align:left;
+ border:none;
+ vertical-align:bottom;
+}
+/* end */
+
+/*popup design - begin*/
+
+.popuplabel {
+color:white;
+font-family:'mySiteFont';
+font-size:1.0em;
+font-weight:bolder;
+text-align:right;
+}
+
+/* end */
+
+/* Dashboard Style -Begin */
+
+  .dashboardTD {
+    background-color:lightblue;
+    height:55px;
+    width:60px;
+    }
+/*End*/
+
+    .rounded-corners {
+     -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+
+
+
+    /*  Header  and Dashboard styles - given by client*/
+    @charset "UTF-8";
+/* CSS Document */
+
+/*body {
+    background-color: #283385;
+    color: #000000;
+    font-family: "Century Gothic",Trebuchet MS,Verdana,Helvetica,Sans-Serif;
+    font-size: 0.85em;
+    margin: 0;
+    padding: 0;
+}*/
+
+.layoutbody {
+  background-color: #40407B;
+    color: #000000;
+    font-family: 'mySiteFont';
+    font-size: 0.85em;
+    margin: 0;
+    padding: 0;
+    border:none !important;
+}
+
+.Day {
+	font-family: Hero;
+	color: #000;
+	font-size: 15px;
+	padding-top: 20px;
+	padding-right: 2px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+}
+.box {
+	background-image: Url('../Images/boxcopy.png') ; 
+	height: 109px;
+	width: 127px;
+     display: inline-block;
+     vertical-align: top;
+     text-align:center;
+}
+
+.boxtext{
+	font-family: 'mySiteFont';
+	font-size: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top:6px;
+	padding-bottom:6px;
+	color: #FFF;
+    text-align: center;
+}
+
+.boxno{
+	font-family: 'mySiteFont';
+	font-size: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top:6px;
+	padding-bottom:10px;
+	color: #FFF;
+}
+
+	
+.month {
+	font-family: hero;
+	color: #000;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-right: 2px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+}
+
+.time {
+	font-family: TimesNewRoman;
+	color: #000;
+	font-size: 36px;
+}
+
+.topheaders {
+	font-family: hero;
+	color: #FFF;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.infotab {
+	background-color:#24BCAD;
+	height: 35px;
+
+}
+
+ .nextline { 
+  display: block;
+    }
+    /* new Header styles - ENd*/
+
+
+
+     /* UC OPeration Menu Styles - Begin*/
+
+    .operationSavebutton 
+    {
+    background-color:#A3CF53; 
+    height: 32px;
+     width:95px;
+     text-align:center;
+     vertical-align:middle;     
+     color:#283385;
+     font-family:'mySiteFont' !important;
+
+}
+.k-autocomplete.k-state-default, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-dropdown-wrap.k-state-default {
+    background-image:none, linear-gradient(to bottom, #BFE8E3 0px, #BFE8E3 100%);
+}
+.k-autocomplete.k-state-default, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-dropdown-wrap.k-state-default {
+     background-image:none, linear-gradient(to bottom, #EAF4F9 0px, #BFE8E3 100%);
+}
+ .operationSavebutton:hover {           
+        text-align:center;
+        color:white;
+        text-align:center;
+     vertical-align:middle;
+font-family:'mySiteFont' !important;
+border-style:solid  !important;
+border-width:3px !important;
+border-color:#B6CEE6 !important;
+height:32px;
+    }
+.operationCancelbutton 
+{
+    background-color:#A3CF53; 
+    height: 32px;
+     width:95px;
+     text-align:center;
+     vertical-align:middle;
+     color:#283385;
+     font-family:'mySiteFont' !important;
+
+}
+.operationCancelbutton:hover {              
+           text-align:center;
+        color:white;
+        vertical-align:middle;
+font-family:'mySiteFont' !important;
+border-style:solid  !important;
+border-width:3px !important;
+border-color:#B6CEE6 !important;
+height:32px;
+    }
+  End
+      
+
+ /*.grideditbutton {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('../Images/edit_alt2_24x24.png') no-repeat scroll !important;
+    margin-left:1%;
+    }*/
+
+  /*.griddeletebutton {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('../Images/Delete.png') no-repeat scroll !important;
+     margin-left:1%;
+    }*/
+    .gridviewbutton {
+     height:34px !important;
+     width:54px !important;     
+     background: Url('../Images/View.png') no-repeat scroll !important;
+     margin-left:1%;
+    }
+    /*.newformLabelsleft {
+float:left;
+width:22%;
+float:left;
+margin-left:0.3%;
+}
+.newformLabelsright {
+    float:right;
+    width:76%;
+   
+}
+
+.popupFonts {
+    font-family:'mySiteFont' !important;
+font-size:0.9em !important;
+}
+
+
+/*.k-dropdown-wrap .k-input, .k-picker-wrap .k-input, .k-numeric-wrap .k-input {
+    height: 28px !important ;
+    width:38.5%;   
+       
+}*/
+
+#link {
+text-decoration:none;
+border:0;
+outline:none;
+}

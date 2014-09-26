@@ -1,0 +1,184 @@
+<html class="k-ff k-ff20"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+      <title>Home Page</title>
+      <link href="../stylesheets/Site.css" rel="stylesheet" type="text/css">
+      <link href="../stylesheets/new.css" rel="stylesheet" type="text/css">
+      <link href="../stylesheets/FormStyles.css" rel="stylesheet">
+      <link href="../stylesheets/kendo.css" rel="stylesheet">
+       <link href="../stylesheets/kendo.common.min.css" rel="stylesheet">
+      <link href="../stylesheets/kendo_002.css" rel="stylesheet">
+      <link href="../stylesheets/ControlStyles.css" rel="stylesheet">
+      <link href="../stylesheets/GridStyles.css" rel="stylesheet">
+      <link href="../stylesheets/LayoutStyles.css" rel="stylesheet">
+      <link href="../stylesheets/ImageStyles.css" rel=" stylesheet">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/custom.css">
+      <script src="../javascripts/jquery-1.js" type="text/javascript"></script>
+      <script src="../javascripts/jquery.js" type="text/javascript"></script>    
+      <script src="../javascripts/Moment.js" type="text/javascript"></script>
+      <script src="../javascripts/kendo.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+           ShowTime();
+        });
+        function ShowTime() {
+           var now = moment().format("ddd, MMM Do, YYYY, h:mm:ss A");
+           var splitedDates = now.split(',');
+           document.getElementById("lblday").innerHTML = splitedDates[0];
+           document.getElementById("lblmonth").innerHTML = splitedDates[1];
+           document.getElementById("lblyear").innerHTML = splitedDates[2];
+           document.getElementById("lblTym").innerHTML = splitedDates[3];
+           window.setTimeout("ShowTime()", 1000);
+           //var dt = new Date();
+           //document.getElementById("lblTym").innerHTML = dt.toLocaleTimeString();
+           //window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec  
+        }
+      </script>  
+      <script>
+        jQuery(function(){jQuery("#panelbar").kendoPanelBar({"expandMode":"multiple"});});
+      </script>
+  </head>
+
+
+        <!-- Body Content Starts -->
+        <div id="main2" class="main">            
+          <div > 
+            <p style="background-color:#283385;color:white;padding:0px;"> 
+              <img src="../images/pin_24x24.png" style="vertical-align:middle;padding:0.5%;" height="24" width="24">
+                <span class="topheaders">REF Creation</span>
+              </p>
+            <div id="menu" class="menu">
+              <div style="float: left;">
+                <img src="../images/list.png" ,="" class="GridAddNewButton" ,alt="Search Institue">
+                <label id="menu label">Search REF Creation</label>
+              </div>
+             
+                <%= form_tag ref_search_path, :id=>"searchForm" do %>
+                <div style="float: left;">
+                  <%= text_field_tag :ref_search %>
+                  <%= image_submit_tag "../images/Search.png", :id=>"aShowhide", :style=>"vertical-align: top;" %>
+                </div>
+                <% end %>
+                <div style="float:right;">
+                    <%= link_to "Add New REF", new_reference_path, :style=>"background-color:#A3CE52; color:#fff; text-decoration:none; padding: 10px;" %>
+                </div>
+             
+              
+                
+              
+            </div>
+            <!--  Grid Window Starts -->
+            <div style="margin-top: 20px;">
+              <div class="k-widget k-grid" id="GridCourse" data-role="grid">
+                <div class="k-grid-header" style="padding-right: 17px;">
+                  <div class="k-grid-header-wrap">
+                    <table role="grid">
+                      
+
+                      <thead>
+                        <tr>
+                          <th class="k-header k-filterable" data-field="CorseCode" data-title="Course Code" scope="col" data-role="sortable">
+                            <a class="k-grid-filter" tabindex="-1">
+                              <span class="k-icon k-filter"></span>
+                            </a>
+                            <a class="k-link" href="#">Ref no
+                            </a>
+                          </th>
+
+                          <th class="k-header k-filterable" data-field="CourseName" data-title="Course Name" scope="col" data-role="sortable">
+                            <a class="k-grid-filter" tabindex="-1">
+                              <span class="k-icon k-filter"></span>
+                            </a>
+                            <a class="k-link" href="#">Note1
+                            </a>
+                          </th>
+
+                          <th class="k-header k-filterable" data-field="CategoryName" data-title="Category" scope="col" data-role="sortable">
+                            <a class="k-grid-filter" tabindex="-1">
+                              <span class="k-icon k-filter"></span>
+                            </a>
+                            <a class="k-link" href="#">Note2
+                            </a>
+                          </th>
+
+                           <th class="k-header k-filterable" data-field="CategoryName" data-title="Category" scope="col" data-role="sortable">
+                            <a class="k-grid-filter" tabindex="-1">
+                              <span class="k-icon k-filter"></span>
+                            </a>
+                            <a class="k-link" href="#">Note3
+                            </a>
+                          </th>
+
+                          <th class="k-header"  scope="col">
+                            <span class="k-link">Action</span>
+                          </th>
+
+                          <th class="k-header" scope="col" style="display:none;">
+                            <span class="k-link">&nbsp;</span>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="k-grid-content" style="height:200px">
+                  <table role="grid">
+                    
+                      <col style="width:122px">
+                      <col style="width:116px">
+                      <col style="width:94px">
+                      <col style="width:130px">
+                      
+                    <tbody>
+                      <% @references.each do |reference| %>
+                      <tr data-uid="539f6c7a-e12a-4bb0-a39b-94f21ba4ec60" role="row">
+                        <td role="gridcell"><%= reference.ref_no %></td>
+                        <td role="gridcell"><%= reference.note1 %></td>
+                        <td role="gridcell"><%= reference.note2 %></td>
+                        <td role="gridcell"><%= reference.note3 %></td>
+                        <td role="gridcell">
+                            <%= link_to 'Edit', edit_reference_path(reference) %>&nbsp&nbsp; 
+                            <%= link_to 'Destroy', reference, method: :delete, data: { confirm: 'Are you sure?' } %>
+                        </td>
+                      </tr>
+                      <% end %>
+                      
+                      
+                    </tbody>
+                  </table>
+                </div>
+
+                <!--<div class="k-pager-wrap k-grid-pager k-widget" data-role="pager">
+                  <a class="k-link k-state-disabled" data-page="1" href="http://122.165.88.58:8082/CourseandPrograms/CreateCourseIndex#" title="Go to the first page" tabindex="-1">
+                    <span class="k-icon k-i-seek-w">seek-w</span>
+                  </a>
+                  <a class="k-link k-state-disabled" data-page="1" href="http://122.165.88.58:8082/CourseandPrograms/CreateCourseIndex#" title="Go to the previous page" tabindex="-1">
+                    <span class="k-icon k-i-arrow-w">arrow-w</span>
+                  </a>
+                  <ul class="k-pager-numbers k-reset">
+                    <li>
+                      <span class="k-state-selected">1</span>
+                    </li>
+                  </ul>
+                  <a class="k-link k-state-disabled" data-page="1" href="http://122.165.88.58:8082/CourseandPrograms/CreateCourseIndex#" title="Go to the next page" tabindex="-1">
+                    <span class="k-icon k-i-arrow-e">arrow-e</span>
+                  </a>
+                  <a class="k-link k-state-disabled" data-page="1" href="http://122.165.88.58:8082/CourseandPrograms/CreateCourseIndex#" title="Go to the last page" tabindex="-1">
+                    <span class="k-icon k-i-seek-e">seek-e</span>
+                  </a>
+                  <span class="k-pager-info k-label">1 - 4 of 4 items</span>
+                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Body Content Ends -->
+      </div>
+
+    
+    
+    <div class="clearfix"></div>
+    
+  
+</html>

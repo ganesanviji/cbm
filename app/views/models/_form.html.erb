@@ -1,0 +1,128 @@
+<%= form_for(@model) do |f| %>
+              <div id="divMain">
+               <!-- <input data-val="true" data-val-number="The field CourseID must be a number." data-val-required="The CourseID field is required." id="CourseID" name="CourseID" value="" type="hidden">
+                <input id="ExpiryDate" name="ExpiryDate" value="" type="hidden">
+                <input id="hidisexpiry" name="hidisexpiry" value="No" type="hidden">
+                <div id="divHeader" style="width: 100%;">-->
+                <fieldset>
+          
+                  <legend class="legendStyle">New Model Detail</legend>
+
+                  <div class="clearfix" style="height: 20px;"></div>
+
+                  <div>
+                    <div class="divalignleft">
+
+                      <div class="cdetaillabel">
+                        <label for="CourseCategoryID">REF No</label>
+                      </div>
+                      <div class="cdetailright" style="display: inline-flex;">
+                        
+                          <%= f.select :reference_id, options_for_select(Reference.all.collect{ |u| [u.ref_no, u.id] }), :id=>"CourseCategoryCombo" %>
+                        </span>
+                        
+                        <span class="field-validation-valid" data-valmsg-for="CourseCategoryID" data-valmsg-replace="true"></span>
+                            
+                      </div>
+                      <div style="height: 20px;" class="clearfix"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Model No</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_field :model_no, :class=> "text-box single-line", :id => "CourseName" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          <!--<input id="CourseName" name="CourseName" value="" type="hidden">-->
+                        </div>
+
+                        <div class="clearfix" style="height: 20px;"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Description</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_area :description, :class => "text-box single-line", :id => "CourseName", :style => "width:226px;border:1px solid #CCCCCC;" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                         <!-- <input id="CourseName" name="CourseName" value="" type="hidden">-->
+                        </div>
+
+                        <div class="clearfix" style="height: 20px;"></div>
+
+                        <div class="cdetaillabel">
+                          <label for="CourseName">Purchase Price</label>
+                        </div>
+                        <div class="cdetailright">
+                          <%= f.text_field :pur_price, :class=>"text-box single-line", :id => "CourseName" %>
+
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          <!--<input id="CourseName" name="CourseName" value="" type="hidden">-->
+                        </div>
+
+                        <div style="height: 20px;" class="clearfix"></div>
+
+                      </div>
+
+                    <div class="divalignright">
+
+                      <div class="cdetaillabel">
+                        <label for="CourseName">CBM</label>
+                      </div>
+                      
+                      <div class="cdetailright">
+                        <%= f.text_field :cbm, :class=>"text-box single-line", :id => "CourseName" %>
+                          
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          <!--<input id="CourseName" name="CourseName" value="" type="hidden">-->
+                      </div>
+
+                      <div class="clearfix" style="height: 20px;"></div>
+
+                      <div class="cdetaillabel">
+                        <label for="CourseName">Weight</label>
+                      </div>
+                      
+                      <div class="cdetailright">
+                        <%= f.text_field :weight, :class=>"text-box single-line", :id => "CourseName" %>
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          <!--<input id="CourseName" name="CourseName" value="" type="hidden">-->
+                      </div>
+
+                      <div class="clearfix" style="height: 20px;"></div>
+
+                      <div class="cdetaillabel">
+                        <label for="CourseName">Selling Price</label>
+                      </div>
+                      
+                      <div class="cdetailright">
+                        <%= f.text_field :selling_price, :class=>"text-box single-line", :id => "CourseName" %>
+                          <span class="field-validation-valid" data-valmsg-for="CourseName" data-valmsg-replace="true"></span>
+                          <!--<input id="CourseName" name="CourseName" value="" type="hidden">-->
+                      </div>
+
+                      <div class="clearfix" style="height: 20px;"></div>
+
+                      <div class="cdetaillabel">
+                        <label for="CourseName">Upload Image </label>
+                      </div>
+                      <div class="cdetaillabel" id="imgcourseLogo">
+                        <%= f.file_field :avatar%>
+                        
+                      </div>
+                        
+                      
+
+                      <div class="clearfix" style="height: 20px;"></div>
+
+                    </div>
+                  </div>
+
+                </fieldset>
+                <p style="text-align: center;">
+                  
+                  <%= f.submit "Finish", :id=>"btnsubmit", :class=>"operationSavebutton" %>
+                </p>
+              </div>
+            
+          </div><% end %>

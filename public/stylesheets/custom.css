@@ -1,0 +1,42 @@
+table td{
+	border:none ! important;
+	padding:0px ! important;
+}
+
+table{
+	border:none ! important;
+	border-spacing:0px !important;
+}
+.k-group{
+	list-style: none;
+	background: white !important;
+	overflow: hidden;
+	overflow-wrap: initial !important;
+}
+
+.k-header {
+    background: #4BD5C6 !important;
+    color:black !important;
+}
+
+.k-link {
+}
+
+.k-state-selected {
+    background: #A3CF53!important;
+}
+
+.k-state-highlight {
+    background: #A3CF53!important;
+}
+
+k-item k-state-highlight k-state-default {
+    background: #A3CF53!important;
+}
+
+.arrow-down{
+    margin-top: 7px;
+    float: right;
+    height:23px;
+    width:19px;
+}

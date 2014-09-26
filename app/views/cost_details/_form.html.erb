@@ -1,0 +1,21 @@
+<%= form_for([@cbm, @cost, @cost_details]) do |f| %>
+  <div class="field">
+    Model: <%#= f.select :model_id, options_from_collection_for_select(Model.all, :id, :model_no) %>
+    <%= f.select :model_id, options_for_select(Model.all.collect{ |u| [u.model_no, u.id] }) %>
+  </div>
+  <div class="field">
+    <%= f.label :pur_price %><br />
+    <%= f.text_field :pur_price %>
+  </div>
+  <div class="field">
+    <%= f.label :qty%><br />
+    <%= f.text_field :qty %>
+  </div>
+  <div class="field">
+    <%= f.label :sell_price %><br />
+    <%= f.text_field :sell_price %>
+  </div>
+   <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

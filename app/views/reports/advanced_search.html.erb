@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+ <script>
+$(function() {
+$( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+});
+</script>
+
+
+<%= form_tag "/advanced_search" do %>
+	<p>
+		Reference No: <%= select_tag :ref_no_search, options_for_select(Reference.all.collect{ |u| [u.ref_no, u.id] }), {:include_blank => true} %>
+	</p>
+	<p>
+		Model No: <%= select_tag :model_no_search, options_for_select(Model.all.collect{ |u| [u.model_no, u.id] }), {:include_blank => true} %>
+	</p>
+	<p>
+		Description: <%= text_field_tag :desc_search %>
+	</p>
+	<p>
+		Purchase Date: <%= date_field_tag :from_pur_date_search, nil, class: "datepicker" %> to <%= text_field_tag :to_pur_date_search, nil, class: "datepicker" %>
+	</p>
+	<p>
+		Arrival Date: <%= text_field_tag :from_arr_date_search, nil, class: "datepicker" %> to <%= text_field_tag :to_arr_date_search, nil, class: "datepicker" %>
+	</p>
+	<p>
+		<%= submit_tag "Search" %>
+	</p>
+<% end %>
+
+
+<table border="2px solid black">
+<tr>
+	<th>Reference No</th>
+	<th>Model No</th>
+	<th>Desc</th>
+	<th>Purchase Date</th>
+	<th>Arrival Date</th>
+	<th>Quantity</th>
+	<th>Purchase Price</th>
+	<th>Unit</th>
+	<th>CBM</th>
+	<th>CBM_Ex</th>
+	<th>Cost</th>
+	<th>Sell Price</th>
+	<th>Pur No</th>
+</tr>
+
+<tr>
+	<td><%= @ref.ref_no %></td>
+	<% if !params[:model_no_search].blank? %>
+	<% @model = Model.find(params[:model_no_search]) %>
+	<td><%= @model.model_no %></td>
+	<% end %>
+</tr>
+</table>

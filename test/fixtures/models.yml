@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model_no: MyString
+  description: MyText
+  pur_price: 1.5
+  cbm: MyString
+  weight: 1.5
+  selling_price: 1.5
+  reference_id: 
+
+two:
+  model_no: MyString
+  description: MyText
+  pur_price: 1.5
+  cbm: MyString
+  weight: 1.5
+  selling_price: 1.5
+  reference_id: 

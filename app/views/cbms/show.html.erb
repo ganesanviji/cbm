@@ -1,0 +1,142 @@
+<html class="k-ff k-ff20"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+      <title>Home Page</title>
+      <link href="../stylesheets/Site.css" rel="stylesheet" type="text/css">
+      <link href="../stylesheets/FormStyles.css" rel="stylesheet">
+      <link href="../stylesheets/kendo.css" rel="stylesheet">
+      <link href="../stylesheets/kendo_002.css" rel="stylesheet">
+      <link href="../stylesheets/ControlStyles.css" rel="stylesheet">
+      <link href="../stylesheets/GridStyles.css" rel="stylesheet">
+      <link href="../stylesheets/LayoutStyles.css" rel="stylesheet">
+      <link href="../stylesheets/ImageStyles.css" rel=" stylesheet">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/custom.css">
+      <script src="../javascripts/jquery-1.js" type="text/javascript"></script>
+      <script src="../javascripts/jquery.js" type="text/javascript"></script>    
+      <script src="../javascripts/Moment.js" type="text/javascript"></script>
+      <script src="../javascripts/kendo.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+           ShowTime();
+        });
+        function ShowTime() {
+           var now = moment().format("ddd, MMM Do, YYYY, h:mm:ss A");
+           var splitedDates = now.split(',');
+           document.getElementById("lblday").innerHTML = splitedDates[0];
+           document.getElementById("lblmonth").innerHTML = splitedDates[1];
+           document.getElementById("lblyear").innerHTML = splitedDates[2];
+           document.getElementById("lblTym").innerHTML = splitedDates[3];
+           window.setTimeout("ShowTime()", 1000);
+           //var dt = new Date();
+           //document.getElementById("lblTym").innerHTML = dt.toLocaleTimeString();
+           //window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec  
+        }
+      </script>  
+      <script>
+        jQuery(function(){jQuery("#panelbar").kendoPanelBar({"expandMode":"multiple"});});
+      </script>
+  </head>
+
+
+<div id="main" class="main" style="float:left;">            
+          <div style="height:900px;"> 
+            <p style="background-color:#283385;color:white;padding:0px;"> 
+            <img src="Home%20Page_files/pin_24x24.png" style="vertical-align:middle;padding:0.5%;" height="24" width="24">
+
+
+<p id="notice"><%= flash[:notice] %></p>
+<h2>CBM Details</h2>
+<div>
+  <span style="float-left;">
+  <strong>Purchase no:</strong>
+  <%= @cbm.pur_no %>
+<br/>
+<br/>
+  <strong>Pur date:</strong>
+  <%= @cbm.pur_date %>
+<br/>
+<br/>
+  <strong>Arr date:</strong>
+  <%= @cbm.arr_date %>
+<br/>
+<br/>
+  <strong>Exp1:</strong>
+  <%= @cbm.exp1 %>
+<br/>
+<br/>
+  <strong>Conversion:</strong>
+  <%= @cbm.conversion %>
+<br/>
+<br/>
+  <strong>Exp1a:</strong>
+  <%= @cbm.exp1a %>
+<br/>
+<br/>
+  <strong>Exp2:</strong>
+  <%= @cbm.exp2 %>
+<br/>
+<br/>
+  <strong>Exp3:</strong>
+  <%= @cbm.exp3 %>
+<br/>
+<br/>
+  <strong>Exp4:</strong>
+  <%= @cbm.exp4 %>
+<br/>
+<br/>
+  <strong>Exp5:</strong>
+  <%= @cbm.exp5 %>
+<br/>
+<br/>
+  <strong>Exp6:</strong>
+  <%= @cbm.exp7 %>
+<br/>
+<br/>
+  <strong>Exp8:</strong>
+  <%= @cbm.exp8 %>
+<br/>
+<br/>
+  <strong>Exp9:</strong>
+  <%= @cbm.exp9 %>
+<br/>
+<br/>
+  <strong>Exp10:</strong>
+  <%= @cbm.exp10 %>
+<br/>
+<br/>
+  <strong>No of CT:</strong>
+  <%= @cbm.no_of_ct %>
+<br/>
+<br/>
+  <strong>CBM1:</strong>
+  <%= @cbm.cbm1 %>
+<br/>
+<br/>
+  <strong>Arr CBM:</strong>
+  <%= @cbm.arr_cbm %>
+<br/>
+<br/>
+  <strong>CBM:</strong>
+  <%= @cbm.cbm %>
+<br/>
+<br/>
+  <strong>Exp5:</strong>
+  <%= @cbm.exp5 %>
+<br/>
+<br/>
+  <strong>Per CBM Ex:</strong>
+  <%= @cbm.per_cbm_ex %>
+<br/>
+</span>
+</div>
+
+</div></div>
+          </div>
+        </div>
+        <!-- Body Content Ends -->
+      </div>
+
+    </div>
+    
+    <div class="clearfix"></div>
+    </div>
+      

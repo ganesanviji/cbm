@@ -1,0 +1,63 @@
+
+<p>
+	<b>Ref_no-Model_no-Desc:</b> <%= @cost_detail.refno_model_desc %>
+</p>
+
+<p>
+	<b>Last purchase price:</b> <%= @cost_detail.last_pur_price %>
+</p>
+
+<p>
+	<b>Purchase Price:</b> <%= @cost_detail.pur_price %>
+</p>
+
+<p>
+	<b>Quantity:</b> <%= @cost_detail.qty %>
+</p>
+
+<p>
+	<b>purchase com</b> <%= @cost_detail.p_com %>
+</p>
+
+<p>
+	<b>inr:</b> <%= @cost_detail.inr %>
+</p>
+
+<p>
+	<b>cbm:</b> <%= @cost_detail.cbm %>
+</p>
+
+<p>
+	<b>cbm ex:</b> <%= @cost_detail.cbm_ex %>
+</p>
+
+<p>
+	<b>purchase cbm:</b> <%= @cost_detail.p_cbm %>
+</p>
+
+<p>
+	 <b>Per1:</b> <%= @cost_detail.per1 %>
+</p>
+
+<p>
+	<b>per2:</b> <%= @cost_detail.pur2 %>
+</p>
+
+<p>
+	<b>Sell price:</b> <%= @cost_detail.sell_price %>
+</p>
+
+<p>
+	<b>Last sell cbm:</b> <%= @cost_detail.last_sell_cbm %>
+</p>
+
+<p>
+	<b>Last selling price:</b> <%= @cost_detail.last_sell_price %>
+</p>
+<p>
+	<b>Last purchase no:</b> <%= @cost_detail.last_pur_no %>
+</p>
+
+
+
+<%= link_to 'Back', cbm_cost_cost_details_path(:cbm_id => @cost_detail.cost.cbm_id, :cost_id => @cost_detail.cost_id) %>||<%= link_to "Back to Main Menu", home_index_path %>

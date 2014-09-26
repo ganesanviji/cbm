@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+ <script>
+$(function() {
+$( ".datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
+});
+</script>
+
+<h1>Add new cost</h1>
+<%= render "form" %>
+<%= link_to "Back", cbm_costs_path(:cbm_id => @cbm.id) %>||<%= link_to "Back to Main Menu", home_index_path %>
